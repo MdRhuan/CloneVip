@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saideira - Vipme</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ícones SVG inline (recriados como paths, sem dependência de CDN) -->
+<svg class="svg-sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ic-pin" viewBox="0 0 384 512">
+      <path d="M192 0C86 0 0 86 0 192c0 87 124 251 168 306 12 15 36 15 48 0 44-55 168-219 168-306C384 86 298 0 192 0zm0 272a80 80 0 1 1 0-160 80 80 0 0 1 0 160z"/>
+    </symbol>
+    <symbol id="ic-calendar" viewBox="0 0 448 512">
+      <path d="M148 0c11 0 20 9 20 20v44h112V20c0-11 9-20 20-20s20 9 20 20v44h48c26 0 48 22 48 48v352c0 26-22 48-48 48H48c-26 0-48-22-48-48V112c0-26 22-48 48-48h48V20c0-11 9-20 20-20zM40 176v288h368V176H40zm48 48h64v56H88v-56zm104 0h64v56h-64v-56zm104 0h64v56h-64v-56zM88 320h64v56H88v-56zm104 0h64v56h-64v-56zm104 0h64v56h-64v-56z"/>
+    </symbol>
+    <symbol id="ic-whatsapp" viewBox="0 0 448 512">
+      <path d="M380 97A222 222 0 0 0 27 365L0 512l150-39a223 223 0 0 0 106 27h1c122 0 223-100 223-223 0-59-25-115-67-157zM224 460c-33 0-65-9-93-26l-7-4-69 18 19-67-4-7a184 184 0 1 1 341-95c0 102-84 181-187 181zm102-136c-6-3-36-18-41-20s-9-3-13 3-15 18-18 22-7 4-13 1c-33-16-55-29-77-67-6-10 6-9 17-31 2-4 1-7-1-10s-18-43-24-58c-5-14-10-13-14-13h-12c-4 0-11 2-16 8-6 6-21 21-21 50s21 58 24 62c3 4 41 65 100 89 50 20 60 16 71 15s35-14 40-28 5-26 4-28z"/>
+    </symbol>
+    <symbol id="ic-twitter" viewBox="0 0 512 512">
+      <path d="M459 152c0 4 0 9 0 13 0 140-107 302-302 302A300 300 0 0 1 0 419c8 1 16 1 25 1 50 0 96-17 132-46a106 106 0 0 1-99-73c7 1 14 2 21 2 10 0 20-1 29-4A106 106 0 0 1 23 195v-2c15 8 32 13 50 14A106 106 0 0 1 40 65a301 301 0 0 0 219 111 106 106 0 0 1 181-97c24-4 46-13 66-25a107 107 0 0 1-47 59 212 212 0 0 0 61-17 216 216 0 0 1-53 56z"/>
+    </symbol>
+    <symbol id="ic-facebook" viewBox="0 0 448 512">
+      <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137V327h-63v-71h63v-54c0-62 37-96 93-96 27 0 56 5 56 5v61h-31c-31 0-40 19-40 38v46h68l-11 71h-57v153h138a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+    </symbol>
+    <symbol id="ic-heart" viewBox="0 0 24 24">
+      <path d="M12 21.6 2.6 9.9a5.7 5.7 0 0 1 .4-7.2 5 5 0 0 1 7.3.2L12 4.8l1.7-1.9a5 5 0 0 1 7.3-.2 5.7 5.7 0 0 1 .4 7.2z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Vipme">
+      <svg class="logo__mark" aria-hidden="true"><use href="#ic-heart"></use></svg>
+      <span class="logo__text">vipme</span>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hero__title">Saideira</h1>
+    <p class="meta">
+      <svg class="ic ic--sm" aria-hidden="true"><use href="#ic-pin"></use></svg>
+      <span>Night market</span>
+    </p>
+    <p class="meta">
+      <svg class="ic ic--sm" aria-hidden="true"><use href="#ic-calendar"></use></svg>
+      <span>Friday 31/07 às 21:00</span>
+    </p>
+  </div>
+</section>
+
+<section class="sharebar">
+  <div class="wrap share">
+    <span class="share__label">Compartilhar:</span>
+    <a class="share__link share__link--wa" href="#" data-share="whatsapp" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp" title="WhatsApp">
+      <svg class="ic ic--share" aria-hidden="true"><use href="#ic-whatsapp"></use></svg>
+    </a>
+    <a class="share__link share__link--tw" href="#" data-share="twitter" target="_blank" rel="noopener" aria-label="Compartilhar no Twitter" title="Twitter">
+      <svg class="ic ic--share" aria-hidden="true"><use href="#ic-twitter"></use></svg>
+    </a>
+    <a class="share__link share__link--fb" href="#" data-share="facebook" target="_blank" rel="noopener" aria-label="Compartilhar no Facebook" title="Facebook">
+      <svg class="ic ic--share" aria-hidden="true"><use href="#ic-facebook"></use></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FORMULÁRIO ============ -->
+<section class="band band--gray">
+  <div class="wrap">
+    <h2 class="heading">$-BS</h2>
+    <hr class="rule">
+
+    <form class="form" id="guestForm" novalidate>
+      <label class="form__label" for="guests">Informe os nomes dos convidados. (um por linha)</label>
+      <p class="form__required">* obrigatório</p>
+      <textarea id="guests" name="guests" class="form__field" rows="8"
+                aria-describedby="formFeedback"></textarea>
+
+      <!-- Campo isca contra bots: invisível e fora da navegação por teclado. -->
+      <div class="honeypot" aria-hidden="true">
+        <label for="_hp">Não preencha este campo</label>
+        <input type="text" id="_hp" name="_hp" tabindex="-1" autocomplete="off">
+      </div>
+
+      <p class="form__feedback" id="formFeedback" role="status" aria-live="polite" hidden></p>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ INFORMAÇÕES DO EVENTO ============ -->
+<section class="band band--white">
+  <div class="wrap cols">
+    <div class="col">
+      <h2 class="heading">Sobre</h2>
+      <hr class="rule">
+    </div>
+    <div class="col">
+      <h2 class="heading">Local</h2>
+      <hr class="rule">
+      <p class="meta meta--muted">
+        <svg class="ic ic--sm" aria-hidden="true"><use href="#ic-pin"></use></svg>
+        <span>Night market</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUTORA ============ -->
+<section class="band band--gray">
+  <div class="wrap">
+    <div class="col col--wide">
+      <h2 class="heading">Produtora</h2>
+      <hr class="rule">
+      <p class="producer">Night</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="footer">
+  <p class="footer__by">Desenvolvido por:</p>
+  <a class="logo logo--footer" href="#" aria-label="Vipme">
+    <svg class="logo__mark" aria-hidden="true"><use href="#ic-heart"></use></svg>
+    <span class="logo__text">vipme</span>
+  </a>
+  <p class="footer__line">Organiza eventos? <a href="#">Conheça o Vipme</a></p>
+  <p class="footer__line footer__line--muted">Vipme © Copyright 2025 - Direitos Reservados</p>
+  <p class="footer__line"><a href="#">Termos de Uso</a> - <a href="#">Política de Privacidade</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
